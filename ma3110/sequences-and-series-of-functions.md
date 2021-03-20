@@ -10,3 +10,5 @@ Put these functions together to form a sequence
 $$(f_n) = (f_1, f_2, ..., f_n)$$
 
 We say that **$(f_n)$ is a sequence of functions on $E$**.
+
+

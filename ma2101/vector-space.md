@@ -42,6 +42,15 @@ $$ \Phi(au) = a\Phi(u)$$
 If there exits a vector space homomorphism from $U$ to $V$ which is a bijection,
 then we call the homomorphism an **isomorphism**.
 
+## Subspaces
+
+Let $U_1$ and $U_2$ be subspaces of a vector space $V$. Suppose that the intersection $U_1 \cap U_2 = \{0\}$. 
+Then $U_1 + U_2$ is called the **direct sum** of $U_1$ and $U_2$.
+
+The direct sum of $U_1$ and $U_2$ is denoted $U_1 \oplus U_2$.
+
+In a direct sum, some vector expressed as $v = u_1 + u_2$ is unique.
+
 ## Dimensions
 
 A vector space is said to be **finite-dimensional over** $\mathcal{F}$ if it is isomorphic to $\mathcal{F}^n$ for some (finite) integer $n$.
