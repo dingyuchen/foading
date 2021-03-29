@@ -6,5 +6,4 @@ $$ f(x) = \sum^n_{k = 0} \frac{f^{(k)}(a)}{k!} (x - a)^k + \frac{1}{n} \int^x_a 
 
 ## Proof
 
-$$R_n(x)
-$$
+$$R_n(x) $$
