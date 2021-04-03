@@ -42,5 +42,20 @@ $$\int_S \vec F \cdot \vec n \; d \sigma := \int_R \vec F(\vec r (u, v)) \cdot \
 
 If $\vec \rho : \Omega \rightarrow S$ is another parameterization, then there exists some composed function $\Phi$ that is continuously differentiable and invertible.
 
-If $J_\Phi = det(\Phi') : R \rightarrow \R$ always takes $>0$ values then $\vec r$ and $\vec p$ are said to be parametrizing $S$ in the same orientation.
+If $J_\Phi = det(\Phi') : R \rightarrow \R$ always takes $>0$ values then $\vec r$ and $\vec p$ are said to be parametrizing $S$ in the **same orientation**.
+
+### The Normal Vector
+
+> Comparable to the case of curves $\int_C \vec F \cdot \vec T \; ds$
+
+The normal vector $\vec n$ is a unit vector on the positive side of the surface defined by parameterization.
+Setting $\vec n(p)$ as the normalized $\vec r_u(u, v) \times \vec r_v(u, v)$.
+
+$$ \vec n (p) := \frac{\vec r_u (u, v) \times \vec r_v (u, v)}{\vert \vec r_u (u, v) \times \vec r_v (u, v) \vert}$$
+
+### Flow and Flux
+
+In terminology, flux of $\vec F$ is a surface integral
+
+and flow of $\vec F$ over $C$ is a curve integral.
 

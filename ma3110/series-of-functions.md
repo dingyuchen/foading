@@ -45,3 +45,50 @@ i.e.,
 $$\vert f_n(x) \vert \leq M_n \; \forall x \in E, \forall n \in \N$$
 
 If the series $\sum M_n$ converges, then $\sum f_n$ converges uniformly on $E$.
+
+## Theorem 8.3.2
+
+If $\sum^\infty_{n = 1} f_n$ converges uniformly to $f$ on an interval $I$ and each $f_n$ is continuous at $x_0 \in I$, then $f$ is continuous at $x_0$.
+
+### Corollary 8.3.3
+
+If $\sum^\infty_{n = 1} f_n$ converges uniformly to $f$ on an interval $I$ and each $f_n$ is continuous on $I$, then $f$ is continuous on $I$.
+
+## Theorem 8.3.4
+
+If $\sum^\infty_{n = 1} f_n$ converges uniformly to $f$ on $[a, b]$ and each $f_n$ is integrable on $[a, b]$, then 
+
+1. $f$ is integrable on $[a, b]$ and
+2. for every $x \in [a, b]$,
+
+$$ \sum^\infty_{n = 1} \int^x_a f_n(t) \; dt = \int^x_a f(t) \; dt = \int^x_a \sum^\infty_{n = 1} f_n(t) \; dt$$
+
+where the convergence is uniform on [a, b].
+
+## Theorem 8.3.5
+
+Suppose that
+
+1. $\sum^\infty_{n = 1} f_n(x_0)$ converges for some $x_0 \in [a, b]$ and
+2. $\sum^\infty_{n = 1} f'_n$ converges uniformly on $[a, b]$
+
+Then $\sum^\infty_{n = 1} f_n$ converges uniformly on $[a, b]$ to a differentiable function $f$ and
+
+$$\sum^\infty_{n = 1} f_n'(x) = f'(x)$$
+
+ie,
+
+$$\sum^\infty_{n = 1} \frac{d}{dx} f_n(x) = \frac{d}{dx} \Bigg (\sum^\infty_{n = 1} f_n(x) \Bigg)$$
+
+## Theorem 8.3.6
+
+There exists a function $f: \R \rightarrow \R$ such that
+
+1. $f$ is continuous on $\R$
+2. $f$ is not differentiable at any point of $\R$
+
+### Proof
+
+Construct $f$ using uniform convergence of a series.
+
+Let $\phi(x) = \vert x \vert$

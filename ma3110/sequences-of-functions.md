@@ -87,7 +87,7 @@ Let $\epsilon > 0$.
 We have $\vert f_k(x) - f(x) \vert < \frac{\epsilon}{3}$ for all $x$ in $I$.
 
 Since $f_k$ is continuous at $x_0$,
-$exists \delta > 0$ such that $\vert x - x_0 \vert < \delta \Rightarrow \vert f_k(x) - f(x) \vert < \frac{\epsilon}{3}$
+$\exists \delta > 0$ such that $\vert x - x_0 \vert < \delta \Rightarrow \vert f_k(x) - f(x) \vert < \frac{\epsilon}{3}$
 
 $$\vert f(x) - f(x_0) \vert \leq \vert f(x) - f_k(x) \vert + \vert f_k(x) - f_k(x_0) \vert + \vert f_k(x_0) - f(x_0) \vert < \epsilon$$
 
