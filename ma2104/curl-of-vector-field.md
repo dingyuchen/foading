@@ -1,3 +1,72 @@
 # Curl of Vector Field
 
-Curl
+Curl is a differentiation of a vector field that gets another vector field.
+
+Let $U \subseteq \R^3$ be an open set in $\R^3$.
+and $\vec F : U \rightarrow \R^3$ be a differentiable vector field.
+
+The curl of $\vec F$ is the vector field $\nabla \times \vec F : U \rightarrow \R^3$ given by for each $\vec p \in U$, 
+
+$$(\nabla \times \vec F)(\vec p) := \begin{pmatrix}  
+\frac{\partial P}{\partial y}(\vec p) - \frac{\partial N}{\partial z}(\vec p) \\ 
+\frac{\partial M}{\partial z}(\vec p) - \frac{\partial P}{\partial x}(\vec p) \\ 
+\frac{\partial N}{\partial x}(\vec p) - \frac{\partial M}{\partial y}(\vec p) \\ 
+\end{pmatrix}$$
+
+> Take $\nabla = \partial / (\partial x, \partial y, \partial z)$ and do a cross product.
+
+A **curl vector field** on $U$ is a vector field $\vec G : U \rightarrow \R^3$ such that there exists a differentiable vector field $\vec F : U \rightarrow \R^3$ such that $\vec G = \nabla \times \vec F$.
+
+When this is so, the vector field $\vec F$ is called a vector potential of $\vec G$.
+
+## Algebraic Rules for Curls
+
+1. Sum rule 
+2. Difference rule 
+3. Constant multiple rule 
+4. Product rule 
+   1. $\nabla \times (f \vec F) = f \nabla \times \vec F + \nabla f \times \vec F$
+  
+## Important Identity
+
+Let $U \subseteq \R^3$ be an open set in $\R^3$
+and $f: U \rightarrow \R$ be a twice continuously differentiable scalar-valued function on $U$.
+
+Then $\nabla \times (\nabla f) = 0$.
+
+> If $\vec F$ is a gradient vector field, then $\nabla \times \vec F = \vec 0$
+
+## Stoke's Theorem
+
+### Key Theorem 2
+
+Let $S$ be a smooth surface in $\R^3$,
+given a smooth bijective parameterization.
+
+$$\vec r : R \rightarrow S$$
+
+where $R \subseteq \R^2$ is a compact rectangle
+
+- The boundary $\partial S$ of $S$ is then a piecewise smooth curve parameterized by the restriction of $\vec r$ to the boundary $\partial R$ of $R$.
+- Regard $\partial R$ as a piecewise smooth (closed) curve in $\R^2$ oriented counterclockwise.
+- This induces corresponding orientation on $\partial S$.
+
+----------
+
+Let $D \subseteq \R^3$ be an open set with $S \subseteq D$
+and let $\vec F : D \rightarrow \R^3$ be a continuously differentiable vector field. 
+Then
+
+$$\int_S (\nabla \times \vec F) \cdot \vec n \; d \sigma = \int_{\partial S} \vec F \cdot d \vec r = \int_{\partial S} \vec F \cdot \vec T \; ds$$
+
+If 2 different oriented surfaces have the same boundary, their curl integrals are equal.
+
+> Stoke's Theorem also holds for oriented surfaces with holes
+
+## Green's Theorem
+
+Let $C$ be a piecewise smooth, simple closed curve enclosing a region $R$ in the plane.
+LET $\vec F = M \vec i + N \vec j$ be a vector field with $M$ and $N$ having continuous first partial derivatives in an open region containing $R$.
+Then the counterclockwise circulation of $\vec F$ around $C$ equals the double integral of $(\nabla \times \vec F) \cdot \vec k$ over $R$.
+
+$$\oint_C \vec F \cdot T \; ds = \oint_C M \; dx + N \; dy = \iint_R \Bigg(\frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \Bigg ) \; dx \; dy$$

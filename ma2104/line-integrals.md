@@ -107,7 +107,7 @@ Let $C$ be a smooth curve in $\R^n$ given with a bijective smooth parameterizati
 
 Let $\vec F : C \rightarrow \R$ be a continuous vector field on $C$.
 
-The **line integral of $\vec F$ over $C$ with respect to $\vec r$ is defined as
+The **line integral** of $\vec F$ over $C$ with respect to $\vec r$ is defined as
 
 $$\int_C \vec F \cdot d \vec r := \int_I \vec F(\vec r (t)) \cdot \vec r '(t) \; dt$$
 
@@ -117,7 +117,7 @@ If $\vec s : J \rightarrow C$ is another parameterization
 then there exists $\Phi : I \rightarrow J$ that is a contin differentiable bijection
 such that $\vec r = \vec s \circ \Phi$.
 
-If $\Phi' I \rightarrow \R$ always takes $>0$ values
+If $\Phi' : I \rightarrow \R$ always takes $>0$ values
 then $\vec r$ and $\vec s$ are said to be parameterizing $C$ in the _same orientation_.
 
 When this is so,

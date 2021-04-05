@@ -86,3 +86,78 @@ Suppose that $a_n \neq 0 \forall n$
 $$R = \frac{1}{\rho}$$
 
 2. If $\rho = \infty$, then $R = 0$.
+
+## Limit Superior
+
+Let $(b_n)$ be a **bounded** sequence of real numbers.
+
+A point $b$ is called a **cluster point** of $(b_n)$ if there is a subsequence $(b_{n_k})$ such that $b_{n_k} \rightarrow b$.
+
+Let $C(b_n)$ be a set of cluster points of $(b_n)$. The **limit superior** of $(b_n)$ is defined as 
+
+$$ \limsup b_n := \sup C(b_n)$$
+
+### Sequences not bounded above
+
+If the sequence $(b_n)$ is not bounded above, then it has a subsequence $(b_{n_k})$ such that $b_{n_k} \rightarrow \infty$.
+
+In this case, we define 
+
+$$\limsup b_n := \infty$$
+
+## Root Test
+
+Let $\rho = \limsup \vert a_n \vert^{1/n}$.
+
+1. if $\rho < 1$, then the series $\sum^\infty_{n = 1} a_n$ converges absolutely.
+2. if $\rho > 1$, then the series $\sum^\infty_{n = 1} a_n$ diverges
+3. No conclusion if $\rho = 1$
+
+## Cauchy-Hadamard Formula
+
+Let $\sum^\infty_{n = 0} a_n(x - x_0)^n$ be a power series and let
+
+$$\rho = \limsup \vert a_n \vert^{1/n}$$
+
+Then the radius of convergence is given by
+
+$$R = \begin{cases}
+0 & \text{if } \rho = \infty \\
+\frac{1}{\rho} & \text{if } 0 < \rho < \infty \\
+\infty & \text{if } \rho = 0
+\end{cases}$$
+
+> This helps us find the radius of convergence when $\lim \vert \frac{a_{n + 1}}{a_n} \vert$ do not exist.
+
+### Proof
+
+Apply the [Root Test](#root-test) to $a_n (x - x_0)^n$
+
+$$ \limsup \vert a_n(x - x_0)^n \vert^{\frac{1}{n}}
+= \limsup \vert x - x_0 \vert \vert a_n \vert^{\frac{1}{n}}
+= \vert x - x_0 \vert \limsup \vert a_n \vert^{\frac{1}{n}}
+= \vert x - x_0 \vert \rho
+$$
+
+Assume $0 < \rho < \infty$:
+
+$$\vert x - x_0 \vert < \frac{1}{\rho} \Rightarrow \vert x - x_0 \vert \rho < 1 \Rightarrow \text{ Power series converges absolutely }$$
+
+$$\vert x - x_0 \vert > \frac{1}{\rho} \Rightarrow \vert x - x_0 \vert \rho > 1 \Rightarrow \text{ Power series diverges }$$
+
+$$ \therefore R = \frac{1}{\rho}$$
+
+## Theorem 9.2.1
+
+Let $\sum^\infty_{n = 0} a_n(x - x_0)^n$ have a nonzero radius of convergence $R$,
+and let $a$ and $b$ be any two numbers such that $x_0 - R < a < b < x_0 + R$.
+
+Then $\sum^\infty_{n = 0} a_n(x - x_0)^n$ converges uniformly on $[a, b]$.
+
+> Does power series converge uniformly on $(x_0 -R, x_0 + R)$?
+> 
+> No. This is not generally true.
+
+### Proof
+
+Apply WeierStrass M-Test.
