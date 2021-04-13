@@ -206,10 +206,82 @@ A **complex inner product space** is a pair $(V, g)$ consisting of a complex vec
 
 > Cauchy-Schwarz and Pythagoras and orthogonal decomposition still works the same.
 
+## Riez Representation Theorem for Complex
+
+Define $\Gamma_u(v) := g(v, u)$.
+This allows for linearity.
+
+However, $\Gamma : u \rightarrow \Gamma_u$ is not a vector space isomorphism.
+
+### Conjugate Isomorphism
+
+Let $V$ and $W$ be complex vector spaces. 
+A **conjugate isomorphism** $F: V \rightarrow W$ is a bijective map that satisfies
+
+$$F(au + bv) = \bar a F(u) + \bar bF(v) \; \forall a, b \in \mathcal{C}, u, v, \in V$$
+
+So $\Gamma$ is a conjugate isomorphism instead of an isomorphism.
+
 ## Orthonormal and Schur's Theorem
 
-some change
+Given a linear operator $T$ on a finite-dimensional complex inner product space, there exists an **orthonormal** basis with respect to which $T$ has an upper-triangular matrix.
 
-## Spectral Theorem
+> The product of upper-triangular matrices is upper-triangular.
 
+# Spectral Theorem
 
+The existence of an inner product on a vector space allows us to think of vectors as dual vectors.
+
+Thinking of linear transformations as bilinear/sesquilinear forms.
+
+Let $T$ be an operator on teh complex inner product space $(V, g)$. Then define a bilinear/sesquilinear form $\tau$ by
+
+$$T(u, v) := g(u, Tv), \forall u, v \in V$$
+
+### Hermitian (Symmetric) Transformation
+
+A bilinear/sesquilinearform is said to be **hermitian**  or **symmetric** if for all $u, v \in V$, we have
+
+$$\tau(u, v) = \overline{\tau (v, u)}$$
+
+A linear transformation $T$ on an inner product space is called **hermitian** or **symmetric** if its corresponding sesquilinear/bilinear form is hermitian/symmetric.
+
+ie, $T$ satisfies
+
+$$g(u, Tv) = \tau(u, v) = \overline{\tau (v, u)} = \overline{g(v, Tu)} = g(Tu, v) \; \forall u, v \in V$$
+
+> If we use an orthonormal basis, then the matrices of $T$ and $\tau$ are the same.
+
+### Eigenvalues
+
+The eigenvalues of a symmetric/Hermitian linear transformation are real.
+
+#### Proof
+
+We have
+
+$$g(u, Tu) = g(u, \lambda u) = \bar \lambda g(u, u)$$
+
+and 
+
+$$g(u, Tu) = g(Tu, u) = \lambda g(u, u)$$
+
+Since $g$ is definite and eigenvectors are not the zero vector,
+we have $g(u, u) \neq 0$.
+
+So we can divide and conclude that $\bar \lambda = \lambda$.
+
+### (Complex) Spectral Theorem
+
+Any Hermitian linear transformation $T$ on a complex inner product space has a real, diagonal matrix relative to some orthonormal basis.
+
+> Applies for symmetric linear transformation on real vector spaces.
+
+#### Proof
+
+First put the matrix of $T$ into upper triangular form with respect to an orthonormal basis;
+
+Since $T$ and $\tau$ are complex conjugates of each other, the associated sesquilinear form is also upper-triangular and is Hermitian.
+
+But those entries are zero, so both the lower and upper triangle are zero.
+So the matrix is diagonal.
