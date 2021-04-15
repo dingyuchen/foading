@@ -103,7 +103,7 @@ So this is how you extract components of dual vectors.
 We normally think of $T$ as acting on $V$, mapping its elements back to $V$.
 But since $\hat V$ is so closely tied to $V$, we expect that doing something to $V$ should result in something happening to $\hat V$.
 
-###   Transpose 
+### Transpose 
 
 Let $\alpha \in \hat V$ and let $v \in V$.
 Then for each linear transformation $T$, define $\hat T$, a mapping from $\hat V$ to itself, as follows:

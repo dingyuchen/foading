@@ -127,7 +127,7 @@ We can embed the solved submatrix back into the original matrix while preserving
 
 > This does not let us do away with $\alpha$.
 
-## Invertability
+## Invertibility
 
 A complex operator is invertible iff **every** entry down the diagonal is non-zero when it is represented by an upper-diagonal matrix.
 
@@ -181,19 +181,34 @@ where the $J_i$ are Jordan blocks.
 When an operator is represented by the matrix with respect to a Jordan basis, 
 we say that it is in the **Jordan Canonical form**.
 
-## Application
+## Multiplicity
 
 Let $\lambda$ be an eigenvalue of a linear transformation. Then the **multiplicity** of $\lambda$ is the sum of the sizes of the Jordan blocks corresponding to that eigenvalue.
+
+## Characteristic Polynomial
 
 Let $\lambda_1, \lambda_2, ...$ be the eigenvalues of a linear operator $T$, and let $m_i$ be the multiplicity of eigenvalue $\lambda_i$. 
 Then the **characteristic polynomial** of $T$ is the polynomial
 
 $$\chi_T(x) = (x - \lambda_1)^{m_1} \times (x - \lambda_2)^{m_2} \times ....$$
 
-### Cayley-Hamilton Theorem
+> Eigenvalues satisfies the characteristic polynomial; $\chi_T(\lambda_i) = 0 \; \forall i$
+
+
+## Cayley-Hamilton Theorem
 
 $$\chi_T(T) = 0$$
 
 The transformation (its matrix relative to any basis) satisfies its own characteristic equation.
 
+> Treat the scalars as scalar times identity map
+
+### Proof
+
 Suppose that the transformation is in its Jordan normal form, each block - $\lambda I$ is **nilpotent**.
+
+> If you apply the transformation sufficient times, you will get $0$.
+
+## Nilpotent
+
+An operator is called **nilpotent** if some power of it equals $0$.

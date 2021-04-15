@@ -56,6 +56,8 @@ For each pair of indices $(i, j)$, $\zeta^i \otimes \zeta^j$ is a bilinear form.
 
 ### Basis for Bilinear Forms
 
+Any bilinear form on $V$ can be expressed as in the form $g_{ij} \zeta^i \otimes \zeta^j$.
+
 The full set $\zeta^i \otimes \zeta^j$ (with $i, j$ taking all possible values) is a basis for $\mathbf{B}(V)$.
 
 
@@ -84,6 +86,7 @@ An **inner product space** is a pair $(V, g)$ consisting of a vector space $V$ a
 
 > Set of inner products on $V$ is not a subspace
 > > Zero "vector" does not satisfy definiteness
+> >
 > > Negative scalar of an inner product does not satisfy positivity.
 
 ## Length and Angles again
@@ -101,13 +104,14 @@ Vectors $u, v \in V$ are said to be **orthogonal** if $g(u, v) = 0$.
 
 ----------
 
+## Orthogonal Decomposition
+
 Any vector in an inner product space can be written as
 
 $$u = \frac{g(u, v)}{\vert u \vert^2} + \Bigg ( u - \frac{g(u, v)}{\vert v \vert^2} v \Bigg )$$
 
 where $v$ is any non-zero vector.
 
-## Orthogonal Decomposition
 
 ## Cauchy-Schwarz Inequality
 
@@ -222,11 +226,17 @@ $$F(au + bv) = \bar a F(u) + \bar bF(v) \; \forall a, b \in \mathcal{C}, u, v, \
 
 So $\Gamma$ is a conjugate isomorphism instead of an isomorphism.
 
-## Orthonormal and Schur's Theorem
+## Schur's Theorem
 
 Given a linear operator $T$ on a finite-dimensional complex inner product space, there exists an **orthonormal** basis with respect to which $T$ has an upper-triangular matrix.
 
 > The product of upper-triangular matrices is upper-triangular.
+
+### Proof
+
+Over $C$, every linear operator has an upper-triangular matrix with respect to some basis of $V$.
+
+Then it also has an upper-triangular matrix with respect to some orthonormal basis of $V$.
 
 # Spectral Theorem
 

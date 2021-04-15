@@ -10,6 +10,15 @@ Something in the form
 
 $$ a x + b y = c z$$
 
+The following properties must hold
+
+1. commutativity
+2. associativity
+3. additive identity
+4. additive inverse
+5. multiplicative identity
+6. distributive properties
+
 ## Scalar
 
 A scalar can be either real or complex. Scalars are elements of $\mathcal{F} = \R \cup \Complex$.
@@ -43,6 +52,16 @@ If there exits a vector space homomorphism from $U$ to $V$ which is a bijection,
 then we call the homomorphism an **isomorphism**.
 
 ## Subspaces
+
+### Definition of Subspace
+
+A subset $U$ of $V$ is a subspace of $V$ iff $U$ satisfies the following 3 conditions
+
+1. additive identity ($0 \in U$)
+2. closed under addition ($u + w \in U$)
+3. closed under scalar multiplication ($a \vec u \in U$)
+
+### Direct Sum
 
 Let $U_1$ and $U_2$ be subspaces of a vector space $V$. Suppose that the intersection $U_1 \cap U_2 = \{0\}$. 
 Then $U_1 + U_2$ is called the **direct sum** of $U_1$ and $U_2$.
