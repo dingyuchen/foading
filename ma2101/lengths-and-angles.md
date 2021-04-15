@@ -153,7 +153,7 @@ $$g(z_i, z_j) = I_{ij}$$
 ## Riez Representation
 
 Let $(V, g)$ be an inner product space, and let $u \in V$.
-Define a fual vector $\Gamma_u$ by
+Define a dual vector $\Gamma_u$ by
 
 $$\Gamma_u(v) := g(u, v) \; \forall v \in V$$
 

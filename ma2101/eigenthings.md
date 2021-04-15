@@ -62,7 +62,7 @@ The factorization is unique.
 
 2. Any polynomial with real coefficients can be expressed in the form
 
-$$ a(x - a_1)(x - a_2) ... (x^2 + b_1x + c_1)(x^2 + b_2 x + c_2)...$$
+$$a(x - a_1)(x - a_2) ... (x^2 + b_1x + c_1)(x^2 + b_2 x + c_2)...$$
 
 where $a, a_i, b_i, c_i$ are all real numbers and where all of the $b_i, c_i$ satisfy $b_i^2 < 4c_i$. 
 The factorization is unique.
