@@ -71,7 +71,7 @@ If 2 different oriented surfaces have the same boundary, their curl integrals ar
 ## Green's Theorem
 
 Let $C$ be a piecewise smooth, simple closed curve enclosing a region $R$ in the plane.
-LET $\vec F = M \vec i + N \vec j$ be a vector field with $M$ and $N$ having continuous first partial derivatives in an open region containing $R$.
+Let $\vec F = M \vec i + N \vec j$ be a vector field with $M$ and $N$ having continuous first partial derivatives in an open region containing $R$.
 Then the counterclockwise circulation of $\vec F$ around $C$ equals the double integral of $(\nabla \times \vec F) \cdot \vec k$ over $R$.
 
 $$\oint_C \vec F \cdot T \; ds = \oint_C M \; dx + N \; dy = \iint_R \Bigg(\frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \Bigg ) \; dx \; dy$$
