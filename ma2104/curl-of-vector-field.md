@@ -38,6 +38,8 @@ Then $\nabla \times (\nabla f) = 0$.
 
 ## Stoke's Theorem
 
+----------
+
 ### Key Theorem 2
 
 Let $S$ be a smooth surface in $\R^3$,
