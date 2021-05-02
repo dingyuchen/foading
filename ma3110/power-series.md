@@ -70,7 +70,7 @@ $$R = \sup S$$
 
 A power series $\sum^\infty_{n = 0} a_n(x - x_0)^n$
 
-- converges absolutely for all $x \in (x_0 - F, x_0 + R)$
+- converges absolutely for all $x \in (x_0 - R, x_0 + R)$
 - diverges for all $x$ with $\vert x - x_0\vert > R$.
 
 > The theorem makes not statement about the end points $x = x_0 \pm R$
