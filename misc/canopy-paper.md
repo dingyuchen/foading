@@ -1,4 +1,7 @@
 # Canopy: An End-to-End Performance Tracing and Analysis System
+#paper
+
+[Original paper](https://cs.brown.edu/~jcmace/papers/kaldor2017canopy.pdf)
 
 Canopy is Facebook's end-to-end performance tracing infrastructure.
 Canopy records causally related performance data across the end-to-end execution path of requests, including from browsers, mobile applications, and backend services.
@@ -9,7 +12,7 @@ This paper makes the following contributions
 
 1. A decoupled design for tracing that separates instrumentation from the trace model, enabling independent evolution and the composition of different execution models.
 2. A complete pipeline to transform traces into a custom set of extracted features to enable rapid analysis
-3. A set of customizable tracing component sot provide multiple views of the same data for different use cases.
+3. A set of customizable tracing components to provide multiple views of the same data for different use cases.
 
 ## Motivation
 
@@ -28,10 +31,10 @@ Aggregate trace data allowed engineers to pinpoint load issue that introduced 30
 ### Modeling Trace data
 
 Performance traces incorporate a wide range of information from all components on the execution path of requests, from clients through backend services.
-Exposing traces at this granularity is inappropriate for 2 reasons.
+Exposing traces as DAG of events is inappropriate for 2 reasons.
 
 1. In order to reconstruct high-level concepts, engineers must understand and interpret trace events and their causal relationships.
-2. Events are an inappropriate abstraction to expose to engineers adding instrumentation to systems. Engineers must understand how to describe their system's execution model inn terms of events, and do so in a coherent manner across all system components.
+2. Events are an inappropriate abstraction to expose to engineers adding instrumentation to systems. Engineers must understand how to describe their system's execution model in terms of events, and do so in a coherent manner across all system components.
 
 Directly encodes high level traces as a first-class primitive.
 
