@@ -349,6 +349,8 @@ Canopy's backend components require less than 0.1% of available data center reso
 
 We evaluate the tailer's ability to isolate tenants, manage load spikes and prevent tenant interference.
 
+![](2021-05-02-09-54-10.png)
+
 ## Experiences
 
 - Common datasets give casual users an entry point without exposing them to the underlying trace structure.
