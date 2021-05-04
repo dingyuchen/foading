@@ -35,7 +35,7 @@ A function $f$ is **analytic** on $(a, b)$ if
 1. $f$ is infinitely differentiable on $(a, b)$ and
 2. for any $x_0 \in (a, b)$, the Taylor Series of $f$ about $x_0$ converges to $f$ in a neighborhood of $x_0$.
 
-## Arithmetic Operations with Power Serieso
+## Arithmetic Operations with Power Series
 
 The **Cauchy product** of $\sum^\infty_{n = 0} a_n$ and $\sum^\infty_{n = 0} b_n$ is the series $\sum^\infty_{n = 0} c_n$, where for each $n \in \N$,
 
@@ -48,7 +48,7 @@ $$c_n = \sum^n_{k = 0} a_k b_{n-k} = a_0b_n + a_1b_{n - 1} + ... + a_n b_0 $$
 If $\sum^\infty_{n = 0} a_n$ converges absolutely and $\sum^\infty_{n = 0} b_n$ converges, then the Cauchy product 
 $\sum^\infty_{n = 0} c_n$ of these 2 series converges and 
 
-$$\sum^\infty_{n = 0} c_n = \bigg ( \sum^\infty_{n = 0} b_n \bigg) \bigg(\sum^\infty_{n = 0} b_n \bigg )$$
+$$\sum^\infty_{n = 0} c_n = \bigg ( \sum^\infty_{n = 0} b_n \bigg) \bigg(\sum^\infty_{n = 0} a_n \bigg )$$
 
 ## Theorem 9.4.2
 

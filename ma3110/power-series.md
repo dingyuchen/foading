@@ -20,7 +20,7 @@ $$f_n : \R \rightarrow \R, f_n(x) = a_n(x - x_0)^n$$
 
 Suppose that all the terms of the series $\sum^\infty_{n = 1} a_n$ are nonzero and the limit
 
-$$\rho = \lim_{n \rightarrow \infty} \bigg \vert \frac{a_n + 1}{a_n} \bigg \vert$$
+$$\rho = \lim_{n \rightarrow \infty} \bigg \vert \frac{a_{n + 1}}{a_n} \bigg \vert$$
 
 exists.
 
@@ -244,7 +244,7 @@ $$ B_{n, m} = \sum^n_{k = m} b_k$$
 
 Then 
 
-$$ \sum^n_{k = m} b_k c_k = B_{n, m} c_n - \sum^{n -1}_{k = m} (c_{k + 1} - c_k)$$
+$$ \sum^n_{k = m} b_k c_k = B_{n, m} c_n - \sum^{n -1}_{k = m} B_{k, m} (c_{k + 1} - c_k)$$
 
 for all integers $n \geq m \geq 1$.
 
