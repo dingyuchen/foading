@@ -35,5 +35,9 @@ It then uses this structure to create an intermediate representation of the sour
 
 The analysis part also collects information about the source program and stores it in a data structure called a **symbol table**. 
 
+![](2021-05-13-09-50-48.png)
+
+### Lexical Analysis
+
 
 
