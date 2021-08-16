@@ -1,0 +1,38 @@
+# Mathematical Finance 1
+## Module Information
+### Topics
+- Differentiation
+- Integration
+- Sequence and Series of functions
+- Power Series
+
+### Textbook
+Introduction to Real Analysis - Robert G Bartle and Donald R. Sherbert
+
+### Assessment
+
+| Test                   | Weightage |
+| ---------------------- | --------- |
+| Midterm                | 30%       |
+| 4x Homework            | 15%       |
+| Tutorial Participation | 5%        |
+| Finals                 | 50%       |
+
+Tutorial Participation - 2 Presentations
+
+Final mark for homework is the average of your 4 homework scores.
+
+## Table of Contents
+- [[differentiation]]
+- [[higher-derivatives]]
+- [[integration]]
+- [[fundamental-theorem-of-calculus]]
+- [[sequences-of-functions]]
+- [[series-of-functions]]
+- [[power-series]]
+- [[taylor-and-maclaurin-series]]
+
+## Examples
+
+[[ma3110-integration-exercises]]
+
