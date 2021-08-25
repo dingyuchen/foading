@@ -1,31 +1,32 @@
 # Inbox
 
-- [ ] Watch MA3269 Lecture 2
-  - [ ] Complete Weekly Quiz 2
+- [ ] Write all the `ExecutionTracer` tests
+  - [ ] Convert the test into integration tests
+    - [ ] Figure out how to run an instance of a the jvm
 - [ ] Read up on [Zio](https://github.com/zio/zio)
 - [ ] Read up on [Elm](https://elm-lang.org/assets/papers/concurrent-frp.pdf)
   - [ ] Find out more about FRP
-- [ ] Watch and make notes for CS3103
-- [ ] Add lighthouse score to Motion resume
+
+- [ ] MA3269 Tutorial 1
+- [ ] MA3269 Lecture 2b
+- [ ] MA3269 Lecture 3a
+- [ ] MA3269 Lecture 3b
 
 
 ## Graded Deadlines
-- [ ] LSM1301 Lab Assignment 1
-  - [x] Complete LSM1301 lab worksheet
-  - [ ] Waiting for submissions folder to open
-  - [ ] 23 August
-- [ ] MA3269 Week 2 Quiz
-  - [ ] 27 August
+- [ ] CS3103 Lab Prequiz
+  - [ ] 27 August 2pm
+- [ ] MA3269 Week 3 Quiz
+  - [ ] 3 Sep 2359
+- [ ] MA3269 Tutorial 1 Quiz
+  - [ ] 3 Sep 2359
+- [ ] CS4212 Individual Assignment
+  - [ ] 10 Sep 2021 2359
 
 ## Job Applications
 
 - [ ] Apply to [Vanguard](https://www.vanguardjobs.com/job-search-results/?category=Technology&level%5B%5D=Student%20%26%20Recent%20Graduates) 
 - [ ] Apply to [Palantir](https://jobs.lever.co/palantir/01dab70c-073c-4a22-bf76-fb6b9e0a75b0/apply)
-- [ ] Apply to Facebook (SG)
-  - [ ] Enterprise Engineering
-  - [ ] Overseas Recent Grad
-- [ ] Apply to [Paypal](https://wd1.myworkdaysite.com/recruiting/paypal/jobs/job/San-Jose-CA/Software-Engineer---Recent-College-Graduate_R0075015)
-- [ ] Apply to ShopBack
 
 ## Bucket List
 - [[bucket-list]]

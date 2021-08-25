@@ -13,6 +13,7 @@
 - [[module-cs5228]] - CS5228 Knowledge Discovery and Data Mining
 - [[module-cs4212]] - CS4212 Compiler Design
 - [[module-ma3269]] - MA3269 Mathematical Finance 1
+- [[module-cs3103]] - CS3103 Computer Networks
 - [[module-5330]] - CS5330 Randomized Algorithms
 - [[distributed-dyom]] - DYOM Distributed Systems
 - [[module-2131]] - ST2131 Probability
@@ -52,6 +53,7 @@ And remember that you can always join our  [Foam community on Discord](https://d
 [module-cs5228]: cs5228/module-cs5228 "CS5228"
 [module-cs4212]: cs4212/module-cs4212 "Compiler Design"
 [module-ma3269]: ma3269/module-ma3269 "Mathematical Finance 1"
+[module-cs3103]: cs3103/module-cs3103 "Computer Networks"
 [module-5330]: cs5330/module-5330 "Randomized Algorithms"
 [distributed-dyom]: distributed-dyom/distributed-dyom "Distributed Systems"
 [module-2131]: st2131/module-2131 "Probability"

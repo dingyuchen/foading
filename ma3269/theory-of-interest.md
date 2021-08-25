@@ -40,12 +40,12 @@ $$\Bigg (1 + \frac{r^{(p)}}{p} \Bigg)^p = \Bigg (1 + \frac{r^{(q)}}{q} \Bigg)^q$
 In particular, the **effective** annual interest rate (when $p = 1$),
 denoted by $r_e$, is given by
 
-$$1 + r_e = \Bigg ( r + \frac{r^{(p)}}{p} \Bigg)^p$$
+$$1 + r_e = \Bigg ( 1 + \frac{r^{(p)}}{p} \Bigg)^p$$
 
 It can be shown that for $p > 1$, the effective annual interest rate is always greater than the nominal rate $r^{(p)}$.
 That is, for any positive integer $p$,
 
-$$r_e := \Bigg ( r + \frac{r^{(p)}}{p} \Bigg)^p - 1 \geq r^{(p)}$$
+$$r_e := \Bigg ( 1 + \frac{r^{(p)}}{p} \Bigg)^p - 1 \geq r^{(p)}$$
 
 > This can be shown with Bernoulli Inequality
 
@@ -99,3 +99,49 @@ If the _annual interest rate_ is $r$, then
 $$ \frac{PV(\textbf{C})}{PV(\textbf{C}_{(k)})} = (1 + r)^k $$
 
 > The deferment is consistent throughout the interval
+
+### Equation of Value
+
+Consider the cash flow stream $\textbf{C} = \{(c_1, t_1), (c_2, t_2), ..., (c_n, t_n) \}$.
+The equation
+
+$$PV(\textbf{C}) = \sum^n_{i = 1} \frac{c_i}{(1 + r)^{t_i}} = 0$$
+### Internal Rate of Return
+
+Any non-negative root $r$, of the equation of value is called the **yield**, or **internal rate of return (IRR)**, of the cash flow stream.
+
+> In general, $r$ is not unique
+
+> Although if first payment is negative and all subsequent payments are $\geq 0$, $r$ will be unique
+
+## Newton Raphson Method
+
+Numerical method to solve higher order polynomials
+
+Let $\alpha$ be a root of the equation $f(x) = 0$,
+where $f$ is differentiable on an interval containing $\alpha$.
+
+The iterative formula is given by
+
+$$\alpha_{n + 1} = \alpha_n - \frac{f(\alpha_n)}{f'(\alpha_n)}$$
+
+provided $f'(\alpha_n) \neq 0$.
+
+> It is better to multiply the denominator rather than substituting the denominator to create a polynomial
+> As it would increase teh error when converting back to $r$
+
+## Annuities
+
+An annuity is a series of payments made a regular intervals.
+
+An **annuity-due** is one for which payments are made at the _beginning_ of each period.
+
+An **annuity immediate** is one for which payments are made _at the end of each period_.
+
+### Perpetual Annuity (Perpetuity)
+
+A perpetuity is an annuity with an infinite number of payments
+
+## Loans
+
+
