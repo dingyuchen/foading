@@ -14,19 +14,16 @@
 
 
 ## Graded Deadlines
-- [ ] CS3103 Lab Prequiz
-  - [ ] 27 August 2pm
 - [ ] MA3269 Week 3 Quiz
   - [ ] 3 Sep 2359
 - [ ] MA3269 Tutorial 1 Quiz
   - [ ] 3 Sep 2359
 - [ ] CS4212 Individual Assignment
   - [ ] 10 Sep 2021 2359
+- [ ] CS4212 Project
+  - [ ] 19 Sep 2359
 
 ## Job Applications
-
-- [ ] Apply to [Vanguard](https://www.vanguardjobs.com/job-search-results/?category=Technology&level%5B%5D=Student%20%26%20Recent%20Graduates) 
-- [ ] Apply to [Palantir](https://jobs.lever.co/palantir/01dab70c-073c-4a22-bf76-fb6b9e0a75b0/apply)
 
 ## Bucket List
 - [[bucket-list]]

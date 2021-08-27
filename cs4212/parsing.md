@@ -36,3 +36,44 @@ Intermediate forms are called **sentential form**, and can be represented by a g
 
 **Left-most derivation** :
 At each derivation, the leftmost non-terminal is chosen.
+
+If $S \Rightarrow_{lm}^* \alpha$, then $\alpha$ is a left-sentential form.
+
+**Right-most derivation** :
+At each derivation, the rightmost non-terminal is chosen.
+- Also known as **canonical derivation**.
+
+## Ambiguity
+
+If a grammar can produce _more than one_ parse tree for a sentence, then the grammar is **ambiguous**.
+
+### Inherently Ambiguous CFL
+
+A context-free language in which _every_ context-free grammar is ambiguous is said to be **inherently ambiguous**.
+
+## Properties of CFL
+
+Closed under:
+- Union
+- Concatenation
+- Kleene Closure
+- Substitution
+
+Not Closed under:
+- Intersection
+- Complement
+
+## Pushdown Automata
+
+A pushdown automaton $M$ is a system $(Q, \sum, \Gamma, \delta, q_0, Z_0, F)$ where
+1. finite set of states
+2. input alphabet
+3. stack alphabet
+4. initial state
+5. particular stack symbol called the start symbol
+6. set of final states
+7. mapping from $Q \times (\Sigma \cup \epsilon) \times \Gamma$
+
+### Transition Relation
+
+
